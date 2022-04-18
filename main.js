@@ -39,8 +39,16 @@ function sametest(str1, str2) {
   if (!str1 || !str2) {
     return 0;
   }
-  str_2 = divide(str2).toUpperCase().split("");
-  str_1 = divide(str1).toUpperCase().split("");
+  let str_2 = divide(str2).toUpperCase().split("");
+  let str_1 = divide(str1).toUpperCase().split("");
+  str2 = str2.split("");
+  let score = 0;
+  for(let k = 0; k < str2.length; k++){
+    if(str1.indexOf(str2[k])!=-1){
+      score++;
+    }
+  }
+  score = score*(str2.length/str1.length)*100;
   var a = str_1.length;
   var b = str_2.length;
   var output = [];
@@ -57,7 +65,7 @@ function sametest(str1, str2) {
         result[i][j] = Math.max.apply(null, [result[i - 1][j], result[i][j - 1]]);
     }
   }
-  return ((result[a][b] / ((a + b) / 2)) * 100);
+  return ((result[a][b] / ((a + b) / 2)) * 100)+score;
 }
 
 //리스트 생성

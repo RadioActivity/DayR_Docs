@@ -127,7 +127,7 @@ images = {
   "키틴질": ["chitin"],
   "풀무": ["bellows"],
   "피 곰팡이": ["blood_mold"],
-  "항생제": ["analgin"],
+  "항생제": ["penicillin"],
   "향신료": ["spice"],
   "해독 물약": ["potion_radiation"],
   "화약": ["gunpowder"],

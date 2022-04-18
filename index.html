@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="힘돌">
+  <meta name="description" content="Day R Survival 최저 가치(가격)를 검색할 수 있는 표 입니다.">
+  <title>Day R Survival 비공식 가격표</title>
+  <link href=".tltgames.png" rel="shortcut icon" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <div id="screen">
+    <div style="
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      ">
+      <img src="./deco/logo.png" style="max-height:100%; max-width:100%;">
+    </div>
+    <div style="
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      ">
+      <button id="price_type" onclick="
+      change_display_price()" style="
+      width: 100%;
+      height: 100%;
+      ">비율: 일반</button>
+    </div>
+    <div style="
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      ">
+      <input id="search" placeholder="아이템 이름..." />
+    </div>
+    <div id="list">
+      히히 오류다
+    </div>
+  </div>
+  <script src="./item_image_names.json" type="text/javascript"></script>
+  <script src="./price_list_220415.json" type="text/javascript"></script>
+  <script src="./main.js" type="text/javascript"></script>
+</body>

@@ -1,0 +1,108 @@
+body {
+  font-family: "Noto Sans KR";
+  background-image: url("./deco/background.jpg");
+}
+input {
+  font-size: 10vmin;
+}
+button {
+  font-family: "Noto Sans KR";
+  font-size: 4vmin;
+  background-color: transparent;
+  background-image: url("./deco/button.png");
+  background-size: 100% 100%;
+  border: none;
+}
+button:active {
+  background-image: url("./deco/button_over.png");
+}
+#screen {
+  height: 95%;
+  width: 95%;
+  position: absolute;
+  top: 2.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 10vmin 15vmin 1fr;
+}
+#search {
+  font-size: 5vmin;
+  width: 90%;
+  height: 75%;
+  background-color: transparent;
+  background-image: url("./deco/input.png");
+  background-size: 100% 100%;
+  padding: 2vmin;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  color: #E5CB98;
+  border: none;
+}
+#search::placeholder {
+  color: #E5CB98;
+  opacity: 0.3;
+}
+#list {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  font-size: 4vmin;
+  width: auto;
+  overflow-y: scroll;
+  background-image: url("./deco/list_bg.jpg");
+  background-size: 100% 100%;
+  background-origin: content-box;
+  border: 3vmin solid transparent;
+  border-image: url("./deco/edges2.png") 35 repeat;
+}
+.logo {
+  font-size: 5vmin;
+  color: #E5CB98;
+}
+.corner {
+  overflow: visible;
+}
+.edge {
+  overflow: hidden;
+}
+.center_text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.element {
+  height: 20vmin;
+  width: 100%;
+  display: grid;
+  grid-column-gap: 0%;
+  grid-template-columns: 20vmin 2fr 1fr;
+}
+.img {
+  grid-column: 1;
+  padding: 2.5vmin;
+  overflow: hidden;
+  background-image: url("./deco/item_bg.png");
+  background-size: cover;
+}
+.name {
+  grid-column: 2;
+  overflow: visible;
+}
+.name_bg {
+  height: 13vmin;
+  overflow: visible;
+  background-image: url("./deco/name_bg.png");
+  background-size: 100% 100%;
+}
+.price {
+  grid-column: 3;
+  overflow: hidden;
+}
+.price_bg {
+  height: 13vmin;
+  overflow: visible;
+  background-image: url("./deco/price_bg.png");
+  background-size: 100% 100%;
+}
